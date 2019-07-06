@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { getConfiguration } from './../environments/configuration';
+import { config } from './../environments/configuration';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +8,5 @@ import { getConfiguration } from './../environments/configuration';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  environment = getConfiguration().environment;
+  environment = config.environment;
 }
